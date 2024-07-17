@@ -56,7 +56,7 @@ authorization:
 redis:
   images:
     redis:
-      image: redis:6.0.8-alpine
+      image: redis:7.2.5-alpine
     commander:
       image: rediscommander/redis-commander:latest
 
