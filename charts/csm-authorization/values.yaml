@@ -12,17 +12,17 @@ authorization:
   # images to use in installation
   images:
     proxyService:
-      image: dellemc/csm-authorization-proxy:v1.10.1
+      image: dellemc/csm-authorization-proxy:v1.11.0
     tenantService:
-      image: dellemc/csm-authorization-tenant:v1.10.1
+      image: dellemc/csm-authorization-tenant:v1.11.0
     roleService:
-      image: dellemc/csm-authorization-role:v1.10.1
+      image: dellemc/csm-authorization-role:v1.11.0
     storageService:
-      image: dellemc/csm-authorization-storage:v1.10.1
+      image: dellemc/csm-authorization-storage:v1.11.0
     opa:
       image: openpolicyagent/opa
     opaKubeMgmt:
-      image: openpolicyagent/kube-mgmt:0.11
+      image: openpolicyagent/kube-mgmt:8.5.7
 
   # proxy-server ingress will use this hostname
   # NOTE: additional hostnames can be configured in authorization.proxyServerIngress.hosts
@@ -56,7 +56,7 @@ authorization:
 redis:
   images:
     redis:
-      image: redis:6.0.8-alpine
+      image: redis:7.4.0-alpine
     commander:
       image: rediscommander/redis-commander:latest
 
