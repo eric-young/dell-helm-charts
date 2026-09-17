@@ -27,7 +27,7 @@ images:
   registrar:
     image: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.18.0
   healthmonitor:
-    image: registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.18.0
+    image: registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.19.0
   # CSM sidecars
   replication:
     image: dellemc/dell-csi-replicator:v1.11.0
